@@ -1,0 +1,13 @@
+* { box-sizing: border-box; }
+body { margin: 0; color: #163b36; background: #f3eee5; font-family: Georgia, serif; }
+.site-header { display: flex; justify-content: space-between; align-items: center; padding: 1.3rem 7%; border-bottom: 1px solid #d8cbbb; }
+.brand { color: #163b36; font-size: 1.35rem; font-weight: bold; text-decoration: none; }
+nav { display: flex; gap: 2rem; } nav a { color: #163b36; text-decoration: none; }
+.portfolio { width: min(1100px, 86%); min-height: 78vh; margin: auto; display: flex; align-items: center; justify-content: center; gap: 10%; }
+.intro { flex: 1; } .eyebrow { color: #b34f35; font: bold .78rem/1.4 Arial, sans-serif; letter-spacing: .14em; }
+h1 { max-width: 9em; margin: .3em 0; font-size: clamp(2.7rem, 7vw, 5rem); line-height: .98; }
+.intro p:not(.eyebrow) { max-width: 34rem; font-size: 1.15rem; line-height: 1.7; }
+.button { display: inline-block; margin-top: 1rem; padding: .9rem 1.3rem; color: #fffaf0; background: #b34f35; text-decoration: none; border-radius: 4px; }
+.portrait { flex: .75; } .portrait img { display: block; width: 100%; max-width: 390px; margin: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 48% 48% 0 0; }
+footer { padding: 1.4rem; color: #fffaf0; background: #163b36; text-align: center; }
+@media (max-width: 700px) { .site-header { align-items: flex-start; } nav { gap: .8rem; font-size: .9rem; } .portfolio { flex-direction: column; padding: 5rem 0; text-align: center; } h1 { margin-inline: auto; } .portrait { width: 100%; } }
