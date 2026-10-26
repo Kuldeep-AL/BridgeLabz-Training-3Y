@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Design Principles | Assignment 9</title>
+  <link rel="stylesheet" href="question-9.css">
+</head>
+<body>
+  <header><p class="eyebrow">Three principles / Responsive design</p><h1>Make the web<br>fit the moment.</h1></header>
+  <main>
+    <section class="principle-grid" aria-label="Core responsive design principles">
+      <article class="principle"><span class="principle-number">01</span><h2>Fluid layouts</h2><p>Let the layout use available space instead of assuming a fixed screen width.</p><pre><code>.layout {
+  display: grid;
+  grid-template-columns:
+    repeat( auto-fit,
+    minmax(16rem, 1fr) );
+}</code></pre></article>
+      <article class="principle"><span class="principle-number">02</span><h2>Flexible media</h2><p>Keep images inside their containers so they scale down without overflowing.</p><pre><code>img,
+video {
+  max-width: 100%;
+  height: auto;
+}</code></pre></article>
+      <article class="principle"><span class="principle-number">03</span><h2>Breakpoints</h2><p>Shift the design when the content benefits from a new arrangement.</p><pre><code>@media (max-width: 600px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}</code></pre></article>
+    </section>
+  </main>
+  <footer>Principles over devices / 09</footer>
+</body>
+</html>

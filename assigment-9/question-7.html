@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Web Demo | Assignment 9</title>
+  <link rel="stylesheet" href="question-7.css">
+</head>
+<body>
+  <header class="site-header"><a class="brand" href="#top">OPEN<span>FORM</span></a><nav aria-label="Main navigation"><a href="#gallery">Gallery</a><a href="#principles">Principles</a><a href="#cheatsheet">Quick notes</a></nav></header>
+  <main id="top">
+    <div class="demo-grid">
+      <section class="demo-panel gallery-panel" id="gallery"><p class="eyebrow">01 / Image gallery</p><h1>Small details.<br>Wide open space.</h1><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Mountain lake surrounded by forest"><p class="image-caption">A layout should make room for what matters.</p></section>
+      <section class="demo-panel principles-panel" id="principles"><p class="eyebrow">02 / The idea</p><h2>Responsive by nature</h2><p>Responsive design lets a page reorganize itself for the screen in front of it. Flexible grids, adaptable media, and well-chosen breakpoints help content stay clear and useful.</p><a href="#cheatsheet">Read the quick notes <span aria-hidden="true">→</span></a></section>
+      <section class="demo-panel notes-panel" id="cheatsheet"><p class="eyebrow">03 / Quick notes</p><h2>Keep it fluid</h2><ul><li><span>Layout</span><code>grid-template-columns</code></li><li><span>Media</span><code>max-width: 100%</code></li><li><span>Type</span><code>font-size: clamp()</code></li></ul></section>
+    </div>
+  </main>
+  <footer id="contact"><span>OPENFORM / Web notes</span><a href="mailto:hello@openform.example">hello@openform.example</a></footer>
+</body>
+</html>

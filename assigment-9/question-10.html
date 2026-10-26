@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive CSS Dashboard | Assignment 9</title>
+  <link rel="stylesheet" href="question-10.css">
+</head>
+<body>
+  <div class="dashboard">
+    <header class="dashboard-header"><a class="dashboard-brand" href="#overview">CSS<span>FIELDGUIDE</span></a><p>Responsive design / Dashboard</p><span class="edition">EDITION 09</span></header>
+    <aside class="sidebar"><p class="sidebar-label">CONTENTS</p><nav aria-label="Dashboard navigation"><a class="current" href="#overview"><span>01</span>Overview</a><a href="#filters"><span>02</span>Filters</a><a href="#type"><span>03</span>Typography</a><a href="#queries"><span>04</span>Media queries</a><a href="#links"><span>05</span>Cheat sheet</a></nav><p class="sidebar-note">A compact guide to making interfaces work at every size.</p></aside>
+    <main class="dashboard-main" id="overview"><div class="welcome"><div><p class="eyebrow">YOUR CSS TOOLKIT</p><h1>Build for every view.</h1></div><p>Four responsive ideas<br>worth keeping close.</p></div>
+      <section class="dashboard-cards" aria-label="Responsive CSS topics">
+        <article class="dash-card filter-card" id="filters"><span class="dash-index">01 / IMAGE</span><span class="dash-symbol" aria-hidden="true">◉</span><h2>Filters</h2><p>Change the tone of an image with a single CSS property.</p><code>filter: sepia(.4);</code></article>
+        <article class="dash-card type-card" id="type"><span class="dash-index">02 / TYPE</span><span class="dash-symbol" aria-hidden="true">Aa</span><h2>Typography</h2><p>Scale text between a useful minimum and maximum.</p><code>font-size: clamp(...);</code></article>
+        <article class="dash-card query-card" id="queries"><span class="dash-index">03 / LAYOUT</span><span class="dash-symbol" aria-hidden="true">⌘</span><h2>Media queries</h2><p>Adjust layout when a viewport reaches a breakpoint.</p><code>@media (max-width: 750px)</code></article>
+        <article class="dash-card links-card" id="links"><span class="dash-index">04 / REFERENCE</span><span class="dash-symbol" aria-hidden="true">↗</span><h2>Cheat sheet</h2><p>Keep the core patterns together for a quick refresher.</p><a href="question-6.html">Open the CSS notes <span aria-hidden="true">→</span></a></article>
+      </section>
+      <footer class="dashboard-footer"><span>CSS FIELDGUIDE</span><span>Built to adapt.</span></footer>
+    </main>
+  </div>
+</body>
+</html>
