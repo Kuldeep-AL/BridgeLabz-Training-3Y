@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elsewhere Travel | Destination Showcase</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="question-10.css">
+</head>
+<body>
+  <header class="travel-header"><nav class="navbar navbar-expand-md container py-3" aria-label="Main navigation"><a class="navbar-brand" href="#home">ELSEWHERE<span> / TRAVEL</span></a><div class="ms-auto d-flex gap-3"><a class="nav-link" href="#destinations">Destinations</a><a class="nav-link" href="#booking">Plan a trip</a></div></nav></header>
+  <main id="home">
+    <section class="container py-4" id="destinations"><div class="intro d-flex justify-content-between align-items-end flex-wrap gap-3 mb-3"><div><p class="eyebrow">The long way around</p><h1>Somewhere, soon.</h1></div><p class="mb-1">Three places to begin.</p></div>
+      <!-- Bootstrap carousel uses its bundle for slide controls; data-bs-interval sets each slide's timing. -->
+      <div id="destinationCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators"><button type="button" data-bs-target="#destinationCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Show Kyoto"></button><button type="button" data-bs-target="#destinationCarousel" data-bs-slide-to="1" aria-label="Show the Dolomites"></button><button type="button" data-bs-target="#destinationCarousel" data-bs-slide-to="2" aria-label="Show the Azores"></button></div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5500"><img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&amp;fit=crop&amp;w=1800&amp;q=90" class="d-block w-100" alt="Traditional street and pagoda in Kyoto"><div class="carousel-caption"><p>JAPAN / 07 DAYS</p><h2>Kyoto, in the quiet hours.</h2></div></div>
+          <div class="carousel-item" data-bs-interval="6500"><img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&amp;fit=crop&amp;w=1800&amp;q=90" class="d-block w-100" alt="Mountain peaks beneath a starry sky"><div class="carousel-caption"><p>ITALY / 09 DAYS</p><h2>A slower trail through the Dolomites.</h2></div></div>
+          <div class="carousel-item" data-bs-interval="6000"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&amp;fit=crop&amp;w=1800&amp;q=90" class="d-block w-100" alt="Volcanic lake surrounded by green hills"><div class="carousel-caption"><p>AZORES / 06 DAYS</p><h2>Green horizons, Atlantic air.</h2></div></div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#destinationCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous destination</span></button><button class="carousel-control-next" type="button" data-bs-target="#destinationCarousel" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next destination</span></button>
+      </div>
+    </section>
+    <section class="container booking-section py-5" id="booking"><div class="d-flex justify-content-between align-items-end gap-3 mb-2"><div><p class="eyebrow">Your trip, taking shape</p><h2>Booking progress</h2></div><strong class="progress-value">70%</strong></div><div class="progress" role="progressbar" aria-label="Booking completion" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar progress-bar-striped progress-bar-animated" style="width:70%">70% complete</div></div><p class="small text-secondary mt-2 mb-0">Itinerary confirmed · Final details in progress</p></section>
+  </main>
+  <footer class="travel-footer"><div class="container py-4 d-flex flex-wrap justify-content-between gap-2"><span>Elsewhere Travel · Thoughtful trips, made together</span><a href="mailto:hello@elsewhere.example">hello@elsewhere.example · +1 212 555 0184</a></div></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

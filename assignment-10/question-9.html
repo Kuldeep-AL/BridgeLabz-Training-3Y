@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Journal Archive | Pagination</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="question-9.css">
+</head>
+<body>
+  <header class="archive-header"><div class="container py-4 d-flex justify-content-between align-items-center"><a class="brand" href="#journal">FIELD<span>JOURNAL</span></a><span class="issue">NOTES FROM OUT THERE / VOL. 04</span></div></header>
+  <main class="container py-5" id="journal">
+    <section class="archive-intro mb-4"><p class="eyebrow">The journal / Page 02</p><h1>Stories worth<br>taking with you.</h1></section>
+    <section class="post-list" aria-label="Recent journal posts"><article class="post-row"><span class="post-date">JUN 18 / 2026</span><div><p class="post-category">PLACES</p><h2>A long weekend on the northern coast</h2><p>Salt air, a borrowed bicycle, and the pleasure of leaving the map folded.</p></div><a href="#pages" aria-label="Read A long weekend on the northern coast">↗</a></article><article class="post-row"><span class="post-date">JUN 09 / 2026</span><div><p class="post-category">PRACTICE</p><h2>Learning to leave a little white space</h2><p>What a quieter calendar can teach us about attention and making.</p></div><a href="#pages" aria-label="Read Learning to leave a little white space">↗</a></article><article class="post-row"><span class="post-date">MAY 27 / 2026</span><div><p class="post-category">PEOPLE</p><h2>The baker who starts before the city wakes</h2><p>Inside a neighborhood bakery, where the first light is always flour-dusted.</p></div><a href="#pages" aria-label="Read The baker who starts before the city wakes">↗</a></article></section>
+    <!-- Bootstrap pagination centers the page links and marks the current page. -->
+    <nav class="mt-5" aria-label="Journal pages"><ul class="pagination justify-content-center" id="pages"><li class="page-item"><a class="page-link" href="#journal">Previous</a></li><li class="page-item"><a class="page-link" href="#journal">1</a></li><li class="page-item active" aria-current="page"><span class="page-link">2</span></li><li class="page-item"><a class="page-link" href="#journal">Next</a></li></ul></nav>
+    <nav class="pager d-flex justify-content-between mt-4" aria-label="Older and newer posts"><a class="btn btn-outline-secondary" href="#journal">← Older Posts</a><a class="btn btn-outline-secondary" href="#journal">Newer Posts →</a></nav>
+  </main>
+  <footer class="container py-4">Field Journal · Stories from near and far</footer>
+</body>
+</html>
